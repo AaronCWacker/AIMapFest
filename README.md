@@ -1,3 +1,14 @@
+# Google Maps Datasets
+
+Google Maps has large dataset files that can be downloaded to get ultra high resolution 3d simulated views of locations in map context.  To do this requires a map account on google cloud along with a map project like below:
+
+https://console.cloud.google.com/apis/library?project=eng-diagram-312111
+
+Note ways to restrict includes referrers which allows you to constrained the domain URL that you can come from.  The other I like is the API restriction which allows type based restriction for example Javascript API only or Directions only which limits which features can be used with the secured API Key:
+
+![image](https://github.com/AaronCWacker/AIMapFest/assets/30595158/329e2419-fa1c-41ab-b6a5-5b456737c719)
+
+
 # List of Map Projects.
 1. https://huggingface.co/spaces/awacke1/Northern.Lights.Map.Streamlit.Folium
 2. https://huggingface.co/spaces/awacke1/HTML5-Aframe-3dMap-Flight
