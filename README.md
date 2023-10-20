@@ -1,5 +1,79 @@
 # AI Prompt Response Memory on Map Making Strategies in Gamification:
 
+# Swim break calories counting on rings and pool
+
+import streamlit as st
+
+# Function to calculate calories burned during swimming
+def calories_swim(time_hr, weight_kg):
+    METS = 10  # Metabolic Equivalent for swimming
+    return (time_hr * METS * 3.5 * weight_kg) / 200
+
+# Function to calculate calories burned during pull-ups
+def calories_pullup(weight, reps):
+    # 1 calorie per 2.20462 pounds lifted per meter (estimated)
+    calories_per_pullup = (weight * 0.453592) * 2 / 2.20462
+    return calories_per_pullup * reps
+
+# Streamlit UI
+st.title("Calories Burned Calculator 🏊‍♂️💪")
+st.sidebar.header("Input Parameters 🛠️")
+
+# Swimming parameters
+time_swim = st.sidebar.slider("Swimming Time (hours)", 0.0, 5.0, 2.0)
+weight = st.sidebar.number_input("Your weight (lbs)", 100, 300, 175)
+
+# Ring Exercise parameters
+reps = st.sidebar.slider("Number of Pull-Ups", 0, 500, 400)
+
+st.sidebar.subheader("Choose Exercise Type 🤸‍♂️")
+exercise_type = st.sidebar.selectbox(
+    "",
+    ["Swim Jim 🏊‍♂️", "Ring King 👑", "Both Boost 🚀"]
+)
+
+st.sidebar.subheader("Choose Swim Style 🌊")
+swim_style = st.sidebar.selectbox(
+    "",
+    ["Frog Kick 🐸", "Dolphin Kick 🐬", "Butterfly 🦋"]
+)
+
+st.sidebar.subheader("Choose Ring Style 🪐")
+ring_style = st.sidebar.selectbox(
+    "",
+    ["Standard 🌟", "Mixed Grip ✨", "Wide Grip 🌠"]
+)
+
+# Calculation
+weight_kg = weight * 0.453592
+calories_from_swimming = calories_swim(time_swim, weight_kg)
+calories_from_pullups = calories_pullup(weight, reps)
+
+# Display
+st.subheader(f"Calories Burned 🔥")
+if exercise_type == "Swim Jim 🏊‍♂️":
+    st.write(f"Calories burned from swimming: {calories_from_swimming:.2f}")
+elif exercise_type == "Ring King 👑":
+    st.write(f"Calories burned from pull-ups: {calories_from_pullups:.2f}")
+else:
+    total_calories = calories_from_swimming + calories_from_pullups
+    st.write(f"Total calories burned: {total_calories:.2f}")
+
+st.subheader("Muscle Groups Worked 🦾")
+if exercise_type == "Swim Jim 🏊‍♂️":
+    st.write("Swimming works the back, shoulders, arms, and legs.")
+elif exercise_type == "Ring King 👑":
+    st.write("Pull-ups work the back, biceps, and forearms.")
+else:
+    st.write("Doing both exercises works almost all major muscle groups!")
+
+st.subheader(f"Swim Style: {swim_style} 🌊")
+st.write("Various swim styles focus on different muscle groups.")
+
+st.subheader(f"Ring Style: {ring_style} 🪐")
+st.write("Different grip styles can emphasize different muscle groups.")
+
+
 # Response 1:
 
 import streamlit as st
