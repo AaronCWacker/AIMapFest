@@ -1,5 +1,40 @@
 # AI Prompt Response Memory on Map Making Strategies in Gamification:
 
+
+
+# List of Map Projects.  Demonstration on Chromebook
+1. https://huggingface.co/spaces/awacke1/Northern.Lights.Map.Streamlit.Folium:  
+2. https://huggingface.co/spaces/awacke1/HTML5-Aframe-3dMap-Flight
+3. https://huggingface.co/spaces/awacke1/HTML5-Aframe-3D-Maps
+4. https://huggingface.co/spaces/awacke1/Google-Maps-Web-Service-Py
+5. https://huggingface.co/spaces/awacke1/UnitedStatesMapAIandNLP
+6. https://huggingface.co/spaces/awacke1/MN.Map.Hospitals.Top.Five
+7. https://huggingface.co/spaces/awacke1/3.HTML5-Aframe-3dMap-Flight
+8. https://huggingface.co/spaces/awacke1/Maps.Markers.Honor.Iceland
+9. https://huggingface.co/spaces/awacke1/Bird-Species-Migration-Month-Map
+10. https://huggingface.co/spaces/awacke1/VizLib-TopLargeHospitalsNewJersey
+11. https://huggingface.co/spaces/awacke1/Gradio-Maps-Latitude-Longitude
+12. https://huggingface.co/spaces/awacke1/Top-Ten-Board-Games-Map-Making-Strategy
+
+
+
+# List of Map Projects.
+1. https://huggingface.co/spaces/awacke1/Northern.Lights.Map.Streamlit.Folium
+2. https://huggingface.co/spaces/awacke1/HTML5-Aframe-3dMap-Flight
+3. https://huggingface.co/spaces/awacke1/HTML5-Aframe-3D-Maps
+4. https://huggingface.co/spaces/awacke1/Google-Maps-Web-Service-Py
+5. https://huggingface.co/spaces/awacke1/UnitedStatesMapAIandNLP
+6. https://huggingface.co/spaces/awacke1/MN.Map.Hospitals.Top.Five
+7. https://huggingface.co/spaces/awacke1/3.HTML5-Aframe-3dMap-Flight
+8. https://huggingface.co/spaces/awacke1/Maps.Markers.Honor.Iceland
+9. https://huggingface.co/spaces/awacke1/Bird-Species-Migration-Month-Map
+10. https://huggingface.co/spaces/awacke1/VizLib-TopLargeHospitalsNewJersey
+11. https://huggingface.co/spaces/awacke1/Gradio-Maps-Latitude-Longitude
+12. https://huggingface.co/spaces/awacke1/Top-Ten-Board-Games-Map-Making-Strategy
+
+
+
+
 # Swim break calories counting on rings and pool
 
 import streamlit as st
@@ -178,22 +213,6 @@ https://console.cloud.google.com/apis/library?project=eng-diagram-312111
 Note ways to restrict includes referrers which allows you to constrained the domain URL that you can come from.  The other I like is the API restriction which allows type based restriction for example Javascript API only or Directions only which limits which features can be used with the secured API Key:
 
 ![image](https://github.com/AaronCWacker/AIMapFest/assets/30595158/329e2419-fa1c-41ab-b6a5-5b456737c719)
-
-
-# List of Map Projects.
-1. https://huggingface.co/spaces/awacke1/Northern.Lights.Map.Streamlit.Folium
-2. https://huggingface.co/spaces/awacke1/HTML5-Aframe-3dMap-Flight
-3. https://huggingface.co/spaces/awacke1/HTML5-Aframe-3D-Maps
-4. https://huggingface.co/spaces/awacke1/Google-Maps-Web-Service-Py
-5. https://huggingface.co/spaces/awacke1/UnitedStatesMapAIandNLP
-6. https://huggingface.co/spaces/awacke1/MN.Map.Hospitals.Top.Five
-7. https://huggingface.co/spaces/awacke1/3.HTML5-Aframe-3dMap-Flight
-8. https://huggingface.co/spaces/awacke1/Maps.Markers.Honor.Iceland
-9. https://huggingface.co/spaces/awacke1/Bird-Species-Migration-Month-Map
-10. https://huggingface.co/spaces/awacke1/VizLib-TopLargeHospitalsNewJersey
-11. https://huggingface.co/spaces/awacke1/Gradio-Maps-Latitude-Longitude
-12. https://huggingface.co/spaces/awacke1/Top-Ten-Board-Games-Map-Making-Strategy
-
 
 
 import streamlit as st
