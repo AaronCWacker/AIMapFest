@@ -1,0 +1,4 @@
+#folium
+leafmap
+altair<5
+streamlit-folium

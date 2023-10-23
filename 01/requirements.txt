@@ -1,0 +1,4 @@
+folium
+dask
+altair<5
+vega-datasets

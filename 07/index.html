@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Recursive Polygons in 3D</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  <style>
+    #canvas {
+      height: 500px;
+      width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <a-scene>
+    <a-entity environment="preset: forest"></a-entity>
+    
+    <!-- Recursive Polygon Component -->
+    <a-entity recursive-polygon="
+      vertices: 6;      // Number of vertices
+      scale: 2;         // Scale factor
+      level: 5;         // Recursive level
+      color: #FFC65D;   // Polygon color
+      height: 0.5;      // Polygon height
+      x: 0;             // X-position
+      y: 0;             // Y-position
+      z: -5             // Z-position
+    "></a-entity>
+    
+    <!-- Math Function -->
+    <a-entity math-function="
+      func: sin(x^2+y^2)/sqrt(x^2+y^2);   // Math function to evaluate
+      xmin: -5; xmax: 5;                   // Range of x-values
+      ymin: -5; ymax: 5;                   // Range of y-values
+      xstep: 0.2; ystep: 0.2;              // Step size for x and y
+      scale: 0.5;                          // Scale factor
+      color: #8CEEEF;                      // Function color
+      height: 0.1;                         // Function height
+      z: -5                                // Z-position
+    "></a-entity>
+    
+    <a-entity camera position="0 1.6 0" look-controls wasd-controls></a-entity>
+  </a-scene>
+</body>
+</html>

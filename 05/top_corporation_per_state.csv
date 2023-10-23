@@ -1,0 +1,101 @@
+State,Longitude,Latitude,Corporation,Revenue
+AL,-86.9023,32.3182,Alabama Power Company,10000
+AL,-86.9023,32.3182,Regions Bank,8900
+AK,-154.4934,63.5887,Arctic Slope Regional Corporation,1500
+AK,-154.4934,63.5887,NANA Regional Corporation,1400
+AZ,-111.0937,34.0489,Banner Health,8800
+AZ,-111.0937,34.0489,Avnet Inc.,8200
+AR,-91.8318,35.2010,Walmart,523000
+AR,-91.8318,35.2010,Tyson Foods,42000
+CA,-119.4179,36.7783,Apple,274515
+CA,-119.4179,36.7783,Alphabet Inc.,182527
+CO,-105.7821,39.5501,Arrow Electronics,29000
+CO,-105.7821,39.5501,DISH Network,15000
+CT,-73.0877,41.6032,United Technologies,57000
+CT,-73.0877,41.6032,Cigna,41400
+DE,-75.5277,38.9108,DuPont,21000
+DE,-75.5277,38.9108,Chemours,7000
+FL,-81.5158,27.9944,World Fuel Services,39431
+FL,-81.5158,27.9944,Jabil,27380
+GA,-83.9880,32.1656,The Home Depot,110225
+GA,-83.9880,32.1656,UPS,84379
+HI,-155.5828,20.7967,Hawaiian Electric Industries,2700
+HI,-155.5828,20.7967,Matson Navigation Company,2200
+ID,-114.7420,44.0682,Micron Technology,20342
+ID,-114.7420,44.0682,Albertsons,60675
+IL,-89.3985,40.6331,Walgreens Boots Alliance,139537
+IL,-89.3985,40.6331,State Farm,81419
+IN,-86.1345,40.2672,Anthem Inc.,104213
+IN,-86.1345,40.2672,Eli Lilly and Company,24500
+IA,-93.0977,41.8780,Principal Financial Group,14200
+IA,-93.0977,41.8780,Rockwell Collins,8300
+KS,-98.4842,39.0119,Koch Industries,115000
+KS,-98.4842,39.0119,Sprint Corporation,34500
+KY,-84.2700,37.8393,Humana,64050
+KY,-84.2700,37.8393,Yum! Brands,5570
+LA,-91.9623,30.9843,CenturyLink,18403
+LA,-91.9623,30.9843,Entergy,10963
+ME,-69.4455,45.2538,Hannaford Bros. Co.,4200
+ME,-69.4455,45.2538,IDEXX Laboratories,2300
+MD,-76.6413,39.0458,Lockheed Martin,65394
+MD,-76.6413,39.0458,Marriott International,20468
+MA,-71.3824,42.4072,General Electric,95200
+MA,-71.3824,42.4072,Liberty Mutual,43397
+MI,-85.6024,44.3148,General Motors,137237
+MI,-85.6024,44.3148,Ford Motor Company,155900
+MN,-94.6859,46.7296,UnitedHealth Group,242155
+MN,-94.6859,46.7296,Target,75470
+MS,-89.3985,32.3547,Sanderson Farms,3378
+MS,-89.3985,32.3547,Hancock Whitney Corporation,1030
+MO,-92.2884,37.9643,Express Scripts Holding,100288
+MO,-92.2884,37.9643,Centene Corporation,74120
+MT,-110.3626,46.8797,Stillwater Mining Company,1300
+MT,-110.3626,46.8797,First Interstate BancSystem,1000
+NE,-99.9018,41.4925,Berkshire Hathaway,245510
+NE,-99.9018,41.4925,Union Pacific Railroad,21376
+NV,-116.4194,38.8026,Las Vegas Sands,13740
+NV,-116.4194,38.8026,MGM Resorts International,12500
+NH,-71.5724,43.1939,BAE Systems Inc.,10995
+NH,-71.5724,43.1939,Sprague Resources,3000
+NJ,-74.4057,40.0583,Johnson & Johnson,82703
+NJ,-74.4057,40.0583,Prudential Financial,62820
+NM,-105.8717,34.5199,PNM Resources,1507
+NM,-105.8717,34.5199,Presbyterian Healthcare Services,2500
+NY,-74.0059,40.7128,Verizon Communications,128293
+NY,-74.0059,40.7128,JPMorgan Chase,115631
+NC,-79.0193,35.7596,Bank of America,111470
+NC,-79.0193,35.7596,Lowe's,72146
+ND,-101.0020,47.5515,MDU Resources,4315
+ND,-101.0020,47.5515,Bobcat Company,3100
+OH,-82.9071,40.4173,Cardinal Health,152854
+OH,-82.9071,40.4173,Procter & Gamble,67600
+OK,-97.0929,35.4676,Love's Travel Stops & Country Stores,22000
+OK,-97.0929,35.4676,Hobby Lobby,4300
+OR,-120.5542,43.8041,Nike,39829
+OR,-120.5542,43.8041,Lithia Motors,11750
+PA,-77.1945,41.2033,AmerisourceBergen,169806
+PA,-77.1945,41.2033,Comcast,94537
+RI,-71.4774,41.5801,CVS Health,256776
+RI,-71.4774,41.5801,Textron,13700
+SC,-81.1637,33.8361,Duke Energy,24473
+SC,-81.1637,33.8361,Domtar,5130
+SD,-99.9018,43.9695,Sanford Health,5000
+SD,-99.9018,43.9695,Daktronics,600
+TN,-86.5804,35.5175,FedEx,69361
+TN,-86.5804,35.5175,Pilot Flying J,29330
+TX,-99.9018,31.9686,ExxonMobil,265700
+TX,-99.9018,31.9686,AT&T,181193
+UT,-111.0937,39.3209,Huntsman Corporation,9020
+UT,-111.0937,39.3209,Smith's Food and Drug,6800
+VT,-72.5778,44.5588,Keurig Dr Pepper,11550
+VT,-72.5778,44.5588,Dealer.com,1500
+VA,-78.6569,37.4316,Freddie Mac,73715
+VA,-78.6569,37.4316,General Dynamics,38737
+WA,-120.7401,47.7511,Amazon,386064
+WA,-120.7401,47.7511,Microsoft,143015
+WV,-80.4549,38.5976,West Virginia University Hospitals,4000
+WV,-80.4549,38.5976,Mylan,11043
+WI,-88.7879,43.7844,Johnson Controls,41907
+WI,-88.7879,43.7844,Kohl's,19398
+WY,-107.2903,43.0759,Cloud Peak Energy,850
+WY,-107.2903,43.0759,Sierra Trading Post,650

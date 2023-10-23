@@ -1,0 +1,5 @@
+geopandas
+matplotlib
+streamlit
+plotly
+folium

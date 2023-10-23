@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Minnesota Map</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  <style>
+    #canvas {
+      height: 500px;
+      width: 800px;
+    }
+    .button {
+      background-color: #222;
+      border: none;
+      color: white;
+      font-size: 16px;
+      padding: 10px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .link {
+      color: #8CEEEF;
+    }
+  </style>
+</head>
+<body>
+  <a-scene>
+    <a-entity environment="preset: forest"></a-entity>
+
+    <!-- Define the polygons for Minnesota -->
+    <a-entity position="0 0 -5">
+      <a-entity position="-2.5 0 0">
+        <a-polygon fill="#2D6C4E" vertices="0 0, 1 0, 0.5 1"></a-polygon>
+        <a-polygon fill="#2D6C4E" vertices="0.5 1, 1 0, 1 1"></a-polygon>
+        <a-polygon fill="#2D6C4E" vertices="0 0, 0 1, 0.5 1"></a-polygon>
+        <a-polygon fill="#2D6C4E" vertices="0.5 0, 1 0, 0.5 1"></a-polygon>
+      </a-entity>
+      <a-entity position="2.5 0 0">
+        <a-polygon fill="#2D6C4E" vertices="0 0, 1 0, 0.5 1"></a-polygon>
+        <a-polygon fill="#2D6C4E" vertices="0 0, 0 1, 0.5 1"></a-polygon>
+        <a-polygon fill="#2D6C4E" vertices="0.5 0, 1 0, 1 1"></a-polygon>
+        <a-polygon fill="#2D6C4E" vertices="0.5 0, 0.5 1, 1 1"></a-polygon>
+      </a-entity>
+    </a-entity>
+
+    <!-- Define the camera and buttons -->
+    <a-entity id="camera" camera position="0 50 0" look-controls>
+      <a-entity id="zoomIn" class="button" position="-2.5 0 0" rotation="0 0 180" onclick="zoomIn()">+</a-entity>
+      <a-entity id="zoomOut" class="button" position="2.5 0 0" onclick="zoomOut()">-</a-entity>
+    </a-entity>
+
+    <!-- Define a link to the video on each polygon -->
+    <a-entity position="0 0 -5">
+      <a-entity position="-2.5 0 0">
+        <a-polygon fill="#2D6C4E" vertices="0 0, 1 0, 0.5 1" material="src: #videoTexture"></a-polygon>
+</a-entity>
+<a-entity position="2.5 0 0">
+<a-polygon fill="#2D6C4E" vertices="0 0, 1 0, 0.5 1" material="src: #videoTexture"></a-polygon>
+<a-polygon fill="#2D6C4E" vertices="0 0, 0 1, 0.5 1" material="src: #videoTexture"></a-polygon>
+<a-polygon fill="#2D6C4E" vertices="0.5 0, 1 0, 1 1" material="src: #videoTexture"></a-polygon>
+<a-polygon fill="#2D6C4E" vertices="0.5 0, 0.5 1, 1 1" material="src: #videoTexture"></a-polygon>
+</a-entity>
+</a-entity>
+<!-- Define the video texture -->
+<video id="video" src="https://www.youtube.com/watch?v=2N83yzUcomc" loop></video>
+<a-assets>
+  <video id="video" src="#video" loop></video>
+  <canvas id="videoTextureCanvas" width="512" height="512"></canvas>
+  <a-texture id="videoTexture" src="#videoTextureCanvas"></a-texture>
+</a-assets>
+
+<!-- Define the script to update the video texture -->
+<script>
+  const video = document.querySelector('#video');
+  const canvas = document.querySelector('#videoTextureCanvas');
+  const ctx = canvas.getContext('2d');
+
+  function updateVideoTexture() {
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    const texture = document.querySelector('#videoTexture');
+    texture.needsUpdate = true;
+  }
+
+  video.addEventListener('play', function() {
+    setInterval(updateVideoTexture, 16);
+  });
+</script>
+
+<script>
+  // Get the camera entity
+  const camera = document.querySelector('#camera');
+
+  // Define the zoom in and zoom out functions
+  function zoomIn() {
+    camera.setAttribute('position', {x: camera.getAttribute('position').x, y: camera.getAttribute('position').y - 5, z: camera.getAttribute('position').z});
+  }
+
+  function zoomOut() {
+    camera.setAttribute('position', {x: camera.getAttribute('position').x, y: camera.getAttribute('position').y + 5, z: camera.getAttribute('position').z});
+  }
+</script>
+  </a-scene>
+</body>
+</html>
+
+    
